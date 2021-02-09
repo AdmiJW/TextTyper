@@ -114,16 +114,3 @@ Constants to be used in settings. Accessed via static class property - `TextType
 1. `presetTheme` constants
     * `TextTyper.TBOX_THEME_DARK` - Dark background green text
     * `TextTyper.TBOX_THEME_DEFAULT` - Default theme
-
-## Constants
----
-* `TBOX_THEME_DARK`
-* `TBOX_THEME_DEFAULT`
-* `SOUND_CHERRY_BLACK`
-* `SOUND_CHERRY_BLUE`
-* `SOUND_CHERRY_BROWN`
-* `SOUND_CHERRY_CLEAR`
-* `SOUND_CHERRY_GREEN`
-* `SOUND_CHERRY_GREY`
-* `SOUND_CHERRY_RED`
-* `SOUND_CHERRY_WHITE`
