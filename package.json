@@ -1,6 +1,6 @@
 {
   "name": "text-typers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Module for text typing with cursor effect",
   "main": "",
   "scripts": {
@@ -14,5 +14,8 @@
     "webpack": "^5.20.2",
     "webpack-cli": "^4.5.0"
   },
-  "repository" : {"type": "git", "url": "https://github.com/AdmiJW/TextTyper.git"}
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AdmiJW/TextTyper.git"
+  }
 }
