@@ -3,12 +3,25 @@
 <br>
 
 ### __Links__
+* [Usage](#usage)
 * [Example](#example)
 * [Non-Chainable Methods](#non-chainable-methods)
 * [Chainable Methods](#chainable-methods)
 * [Settings](#settings)
+* [Extensions](#extensions)
 
 <br>
+
+# Usage
+
+Simply put the script tag into your HTML document. Module will be loaded via CDN
+
+```html
+<script src='https://unpkg.com/text-typers@latest/build/bundle.js'></script>
+```
+
+<br>
+
 
 # Example
 
@@ -114,3 +127,11 @@ Constants to be used in settings. Accessed via static class property - `TextType
 1. `presetTheme` constants
     * `TextTyper.TBOX_THEME_DARK` - Dark background green text
     * `TextTyper.TBOX_THEME_DEFAULT` - Default theme
+
+<br><br>
+
+# Extensions
+
+You can extend the functionality of this module through extensions!
+
+1. [Sound Extension](https://www.npmjs.com/package/text-typer-ext-sound)
