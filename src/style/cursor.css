@@ -1,0 +1,123 @@
+
+.cursor {
+    display: inline-block;
+    vertical-align: text-top;
+    margin: 0 0.1em;
+}
+
+
+/*=============================
+        CURSOR STYLES
+==============================*/
+
+/* Vertical Style */
+.CURSOR_STYLE_VERT {
+    min-height: 1em;
+    min-width: 0.07em;
+
+    background-color: black;
+}
+
+
+/* I Style */
+.CURSOR_STYLE_I {
+    min-height: 1em;
+    min-width: 0.05em;
+    position: relative;
+
+    background-color: black;
+}
+.CURSOR_STYLE_I::before {
+    content: '-';
+    position: absolute;
+    top: -0.52em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.CURSOR_STYLE_I::after {
+    content: '-';
+    position: absolute;
+    bottom: -0.55em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* Y Style */
+.CURSOR_STYLE_Y {
+    min-height: .6em;
+    min-width: 0.05em;
+    position: relative;
+    top: .2em;
+
+    background-color: black;
+}
+.CURSOR_STYLE_Y::before {
+    content: '⋎';
+    position: absolute;
+    font-size: .5em;
+    top: -0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.CURSOR_STYLE_Y::after {
+    content: '⋏';
+    position: absolute;
+    font-size: .5em;
+    bottom: -0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* UNDERSCORE Style */
+.CURSOR_STYLE__ {
+    min-height: 0.1em;
+    min-width: 1.2ch;
+
+    background-color: black;
+
+    vertical-align: text-bottom;
+}
+
+
+/* Block Style */
+.CURSOR_STYLE_BLOCK {
+    min-height: 1em;
+    min-width: 1ch;
+
+    background-color: black;
+}
+
+
+
+/* Left Arrow Style */
+.CURSOR_STYLE_LEFTARR {
+    width: 0;
+    height: 0;
+}
+.CURSOR_STYLE_LEFTARR::before {
+    content: '˂';
+}
+
+
+
+/*===========================
+        KEYFRAMES
+===========================*/
+@keyframes CURSOR_BLINK_FLASH {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+@keyframes CURSOR_BLINK_LINEAR {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}

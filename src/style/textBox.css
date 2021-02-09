@@ -1,0 +1,22 @@
+
+.textbox {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+
+/*========================
+        DARK THEME
+========================*/
+.TBOX_THEME_DARK {
+    font-family:'Courier New', Courier, monospace;
+
+    background-color: #181818;
+    color: lime;
+}
+.TBOX_THEME_DARK > .cursor {
+    background-color: lime;
+}
+.TBOX_THEME_DARK > .cursor::before, .TBOX_THEME_DARK > .cursor::after {
+    color: lime;
+}
