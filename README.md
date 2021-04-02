@@ -2,6 +2,8 @@
 
 <br>
 
+![Demonstration of TextTyper in gif format](/src/imgs/TextTyper.gif)
+
 ### __Links__
 * [Usage](#usage)
 * [Example](#example)
