@@ -1,7 +1,6 @@
 
 .cursor {
     display: inline-block;
-    vertical-align: text-top;
     margin: 0 0.1em;
 }
 
@@ -12,9 +11,9 @@
 
 /* Vertical Style */
 .CURSOR_STYLE_VERT {
-    min-height: 1em;
+    min-height: 1.2em;
     min-width: 0.07em;
-
+    vertical-align: text-bottom;
     background-color: black;
 }
 
@@ -23,40 +22,51 @@
 .CURSOR_STYLE_I {
     min-height: 1em;
     min-width: 0.05em;
+    vertical-align: sub;
     position: relative;
-
     background-color: black;
+    margin: 0 .2em;
 }
 .CURSOR_STYLE_I::before {
-    content: '-';
+    content: '';
+    background-color: black;
     position: absolute;
-    top: -0.52em;
+    top: 0;
     left: 50%;
+    height: 0.05em;
+    width: 0.3em;
     transform: translateX(-50%);
 }
 .CURSOR_STYLE_I::after {
-    content: '-';
+    content: '';
+    background-color: black;
     position: absolute;
-    bottom: -0.55em;
+    bottom: 0;
     left: 50%;
+    height: 0.05em;
+    width: 0.3em;
     transform: translateX(-50%);
 }
 
 
 /* Y Style */
 .CURSOR_STYLE_Y {
-    min-height: .6em;
+    min-height: 1em;
     min-width: 0.05em;
     position: relative;
+    vertical-align: text-top;
     top: .2em;
 
     background-color: black;
+    transform: scale(0.8);
+    transform-origin: top center;
 }
 .CURSOR_STYLE_Y::before {
     content: '⋎';
+    display:inline-block;
     position: absolute;
     font-size: .5em;
-    top: -0.7em;
+    top: -0.85em;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -83,9 +93,9 @@
 
 /* Block Style */
 .CURSOR_STYLE_BLOCK {
-    min-height: 1em;
+    min-height: 1.2em;
     min-width: 1ch;
-
+    vertical-align: text-bottom;
     background-color: black;
 }
 

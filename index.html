@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src='build/bundle.js'></script>
+    
+    <link rel='stylesheet' type='text/css' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'/>
+
+</head>
+<body>
+    <div id='test'></div>
+
+
+
+    <script>
+        const html = document.getElementById('test');
+        const tt = new TextTyper(html);
+
+        tt.settings({
+            cursorSettings: {
+                cursorStyling: TextTyper.CURSOR_STYLE__
+            }
+        });
+
+        tt.eventQueue()
+            .typeText('Hello World!')
+            .standby(1000)
+            .deleteChar()
+            .standby(500)
+            .typeText('Text Typer! ✏')
+            .start();
+    </script>
+</body>
+</html>
